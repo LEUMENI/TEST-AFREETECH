@@ -1,11 +1,10 @@
 from flask import render_template, request, redirect, url_for
-from app import app
+from app import app  # Importer l'application déjà créée dans app.py
 from models import db, Client
 
 @app.route('/')
 def index():
-    clients = Client.query.all()  # Récupérer tous les clients de la base de données
-    return render_template('index.html', clients=clients)
+    return redirect(url_for('add_client'))  # Redirige vers la route /add_client
 
 @app.route('/add_client', methods=['GET', 'POST'])
 def add_client():
@@ -19,6 +18,6 @@ def add_client():
         db.session.add(new_client)
         db.session.commit()
         
-        return redirect(url_for('index'))  # Rediriger vers la page principale
+        return redirect(url_for('index'))  # Redirige vers la page principale
     
-    return render_template('add_client.html')
+    return render_template('add_client.html')  # Rendre le template 'add_client.html'

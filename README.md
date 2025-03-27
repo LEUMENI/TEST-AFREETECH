@@ -22,24 +22,24 @@ Commence par cloner ce dépôt dans ton environnement local.
 git clone https://github.com/LEUMENI/TEST-AFREETECH.git
 cd TEST-AFREETECH
 
-### 2.  Créer un Environnement Virtuel
+2.  Créer un Environnement Virtuel
 
 Il est recommandé de créer un environnement virtuel pour gérer les dépendances Python.
 python -m venv venv
-### 3.  Activer l'Environnement Virtuel
+3.  Activer l'Environnement Virtuel
 
 Sur Windows :
 venv\Scripts\activate
-###  4. Installer les Dépendances
+4. Installer les Dépendances
 
 pip install -r requirements.txt
-### 5. Configurer la Base de Données
+5. Configurer la Base de Données
 
 Une fois les dépendances installées, la base de données SQLite sera automatiquement créée au premier lancement de l'application. Flask utilise SQLAlchemy pour gérer les opérations de base de données.
-### 6. Lancer l'Application
+6. Lancer l'Application
 
 python app.py
-### 7. Accéder à l'Application
+7. Accéder à l'Application
 
 Ouvre un navigateur web et accède à l'URL suivante :
 http://127.0.0.1:5000

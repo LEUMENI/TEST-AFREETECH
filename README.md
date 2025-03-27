@@ -2,7 +2,7 @@
 
 ## Description
 
-Ce projet consiste en une plateforme de gestion des clients pour la société INTIA Assurance. L'application permet l'ajout, la modification, la suppression et la consultation des informations clients. Elle utilise Flask comme framework backend, avec une base de données SQLite pour stocker les informations.
+Ce projet consiste en une plateforme de gestion des clients et les assurances pour la société INTIA Assurance. L'application permet l'ajout, la modification, la suppression et la consultation des informations clients et lles assurances. Elle utilise Flask comme framework backend, avec une base de données SQLite pour stocker les informations.
 
 ## Prérequis
 
